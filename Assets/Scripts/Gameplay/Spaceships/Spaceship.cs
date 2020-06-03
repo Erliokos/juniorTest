@@ -60,7 +60,7 @@ namespace Gameplay.Spaceships
 
         public void ApplyDamage(IDamageDealer damageDealer)
         {
-            if (armor < 0)
+            if (armor < damageOneShot)
             {
                 if (_battleIdentity.ToString() != "Enemy")
                 {
